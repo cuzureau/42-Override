@@ -19,7 +19,7 @@ En exécutant le binaire (`./level06`), on observe:
 
 
 ## Analyse
-En analysant le binaire (`gdb ./level05`) on observe:
+En analysant le binaire (`gdb ./level06`) on observe:
 - Un hash est applique au login que l'on fournit pour creer une clef. Cette clef est comparee au serial number que nous fournissons egalement.
 - En cas de succes, la fonction `auth()` renverra 0 et le programme ouvrira un shell via un appel a `system()`
 - On va donc chercher a recuperer le hash afin de savoir quel serial number rentrer pour ouvrir le shell. 
