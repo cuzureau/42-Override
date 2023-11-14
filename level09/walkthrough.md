@@ -48,7 +48,7 @@ En analysant le binaire (`gdb ./level09`) on observe:
     - suivie d'un retour à la ligne (\x0a) pour séparer les deux strings. 
 - Partie 2 du Payload :
     -  offset de 200 octets (B*200).
-    - adresse de la fonction `secret_backdoor()` : `\x8c\x48\x55\x55\x55\x55\x00\x00`. (info functions secret_backdoor)
+    - adresse de la fonction `secret_backdoor()` : (\x8c\x48\x55\x55\x55\x55\x00\x00). (info functions secret_backdoor)
     - on ajoute un retour à la ligne (\x0a).
     - on finit par la commande "/bin/sh".
 - On craft notre payload : 
